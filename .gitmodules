@@ -1,0 +1,3 @@
+[submodule "App1/Frameworks/CacheLib"]
+	path = App1/Frameworks/CacheLib
+	url = https://prajkumarp@github.com/prajkumarp/CacheLib.git
