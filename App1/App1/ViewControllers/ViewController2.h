@@ -10,4 +10,8 @@
 
 @interface ViewController2 : UIViewController
 
+- (IBAction)homeButtonClicked:(id)sender;
+
+@property (strong, nonatomic) UIViewController *rootController;
+
 @end

@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController2
+@synthesize rootController;
 
 - (instancetype)init
 {
@@ -35,6 +36,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)homeButtonClicked:(id)sender{
+//    [[rootController navigationController] popToRootViewControllerAnimated:YES];
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"ShowHome"
+     object:self];
+}
 /*
 #pragma mark - Navigation
 
