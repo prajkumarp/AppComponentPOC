@@ -14,7 +14,7 @@
 
 @implementation ViewController2
 @synthesize rootController;
-
+@synthesize detailReceived;
 - (instancetype)init
 {
     NSBundle* resourcesBundle = [NSBundle bundleForClass:[self class]];
@@ -29,6 +29,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    cacheManager *cacheInstance = [cacheManager sharedInstance];
+    
+    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"L-Brands.CacheLib"];
+    NSURL *url = [bundle URLForResource:@"cachelib" withExtension:@"momd"];
+    cacheInstance.managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:url];
+
+    NSString *datareceived = [cacheInstance getDataForKey:@"Value"];
+    
+    
+
+    [[self detailReceived] setText:datareceived];
 }
 
 - (void)didReceiveMemoryWarning {

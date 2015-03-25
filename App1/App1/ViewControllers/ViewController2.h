@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CacheLib/cacheManager.h>
 
 @interface ViewController2 : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *detailReceived;
 - (IBAction)homeButtonClicked:(id)sender;
 
 @property (strong, nonatomic) UIViewController *rootController;

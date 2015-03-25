@@ -15,6 +15,7 @@
 		13D9F8801AB094E300818093 /* ViewController2.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D9F87D1AB094E300818093 /* ViewController2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D9F8811AB094E300818093 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D9F87E1AB094E300818093 /* ViewController2.m */; };
 		13D9F8821AB094E300818093 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13D9F87F1AB094E300818093 /* ViewController2.xib */; };
+		13E3E5AA1AC345D000064951 /* CacheLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E3E5A91AC345D000064951 /* CacheLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		13D9F87D1AB094E300818093 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		13D9F87E1AB094E300818093 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		13D9F87F1AB094E300818093 /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		13E3E5A91AC345D000064951 /* CacheLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CacheLib.framework; path = "../../../FrameworkLibs/Debug-iphonesimulator/CacheLib.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E3E5AA1AC345D000064951 /* CacheLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		13D9F8481AB088DD00818093 = {
 			isa = PBXGroup;
 			children = (
+				13E3E5A91AC345D000064951 /* CacheLib.framework */,
 				13D9F8541AB088DD00818093 /* App1 */,
 				13D9F8611AB088DD00818093 /* App1Tests */,
 				13D9F8531AB088DD00818093 /* Products */,
@@ -350,6 +354,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/rpanneerselv/Desktop/Source/BluePrint/Hub/FrameworkLibs/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = App1/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -367,6 +375,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/rpanneerselv/Desktop/Source/BluePrint/Hub/FrameworkLibs/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = App1/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
